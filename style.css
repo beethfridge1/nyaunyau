@@ -39,8 +39,7 @@ nav a:hover {
 /* Hero szekció */
 .hero {
     height: 600px;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                url("hero.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(100,0,0,0.5)),
     display: flex;
     justify-content: center;
     align-items: center;
