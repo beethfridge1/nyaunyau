@@ -1,9 +1,9 @@
 /* Alap beállítások */
 * {
-    margin: 69;
-    padding: 40;
+    margin: 10;
+    padding: 10;
     box-sizing: border-box;
-    font-family: Comic Sans, sans-serif;
+    font-family: Comic Sans;
 }
 
 /* Oldal háttér */
