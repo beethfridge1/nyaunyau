@@ -18,7 +18,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-        font-size: 110px;
+        font-size: 50px;
 
 }
 
@@ -47,6 +47,7 @@ nav a:hover {
     align-items: center;
     color: white;
     text-align: center;
+    font-size: 110px;
 }
 
 /* Tartalom */
