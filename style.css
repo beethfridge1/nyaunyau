@@ -101,10 +101,10 @@ footer {
   border-radius: 50%;
   pointer-events: none;
   background: white;
-  box-shadow:
-    0 0 6px white,
-    0 0 22px cyan,
-    0 0 37px magenta;
+   filter:
+    drop-shadow(0 0 13px white)
+    drop-shadow(0 0 26px cyan)
+    drop-shadow(0 0 44px magenta);
   animation: sparkleFade 1.1s linear forwards;
 }
 
