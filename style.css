@@ -8,7 +8,7 @@
 
 /* Oldal háttér */
 body {
-    background: #FF215C;
+    background: linear-gradient(rgba(255,33,92,1), rgba(129,33,255,1)),;
     color: #333;
 }
 
