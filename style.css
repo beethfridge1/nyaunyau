@@ -96,17 +96,6 @@ footer {
   border-radius: 50%;
   pointer-events: none;
   background: white;
-.star {
-     clip-path: polygon(
-    50% 0%, 61% 35%, 98% 35%,
-    68% 57%, 79% 91%,
-    50% 70%, 21% 91%,
-    32% 57%, 2% 35%,
-    39% 35%
-  width: 180%;
-  height: 180%;
-  background: white;
-  );
 
   filter:
     drop-shadow(0 0 6px white)
