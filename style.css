@@ -124,7 +124,7 @@ footer {
 @keyframes sparkleFade {
   from {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(3);
   }
   to {
     opacity: 0;
