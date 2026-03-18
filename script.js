@@ -4,8 +4,8 @@ document.addEventListener("mousemove", function(e) {
   sparkle.className = "sparkle";
 
   // random offset
-  const offsetX = (Math.random() - 0.5) * 20;
-  const offsetY = (Math.random() - 0.5) * 20;
+  const offsetX = (Math.random() - 0.5) * 32;
+  const offsetY = (Math.random() - 0.5) * 40;
 
   sparkle.style.left = (e.clientX + offsetX) + "px";
   sparkle.style.top = (e.clientY + offsetY) + "px";
