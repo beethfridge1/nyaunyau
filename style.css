@@ -111,13 +111,17 @@ footer {
     drop-shadow(0 0 30px cyan);
 }
 
-@keyframes sparkleFade {
+  animation: driftFade 0.8s ease-out forwards;
+}
+
+@keyframes driftFade {
   from {
     opacity: 1;
-    transform: scale(3);
+    transform: translate(0, 0) scale(1);
   }
+
   to {
     opacity: 0;
-    transform: scale(0.2);
+    transform: translate(var(--driftX), var(--driftY)) scale(0.4);
   }
 }
