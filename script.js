@@ -11,6 +11,10 @@ document.addEventListener("mousemove", function(e) {
   const driftX = (Math.random() - 0.5) * 40;
   const driftY = (Math.random() - 0.5) * 40;
 
+
+  const duration = Math.random() * 0.5 + 0.5;
+  sparkle.style.animationDuration = duration + "s";
+  
   sparkle.style.left = (e.clientX + offsetX) + "px";
   sparkle.style.top = (e.clientY + offsetY) + "px";
 
