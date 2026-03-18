@@ -19,7 +19,19 @@ header {
     padding: 20px;
     text-align: center;
         font-size: 50px;
+.slide-text {
+  display: inline-block;
+  animation: slideLR 3s ease-in-out infinite alternate;
+}
 
+@keyframes slideLR {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(50px);
+  }
+}
 }
 
 /* Navigáció */
