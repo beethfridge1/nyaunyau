@@ -152,41 +152,36 @@ footer {
 
 /* ==================== Floating Text ==================== */
 .floating-text {
-  text-shadow:
-    0 0 8px #8121FF,
-    0 0 16px #FF2167,
-    0 0 24px #8121FF;
-}
     position: fixed;
     top: 50%;
     left: 50%;
+
     opacity: 0;
     transform: translate(-50%, -50%) translateY(50px);
     transition: all 0.3s ease;
-  z-index: 1000;             /* on top of everything */
+
+    z-index: 1000;
+
     color: white;
     background: rgba(0,0,0,0.7);
     padding: 15px 25px;
     border-radius: 12px;
-    z-index: 1000;
+
+    text-shadow:
+      0 0 8px #8121FF,
+      0 0 16px #FF2167,
+      0 0 24px #8121FF;
+
+    pointer-events: none;
 }
 
-.floating-text {
-    pointer-events: none; /* default: ignore mouse when hidden */
-}
-
-.floating-text.show {
-    pointer-events: auto; /* clickable when visible */
-}
 .floating-text.show {
     opacity: 1;
     transform: translate(-50%, -50%) translateY(0);
+    pointer-events: auto;
+
 }
 
-.floating-text a {
-  color: white;
-  text-decoration: none;
-}
 .floating-text a:hover {
   text-decoration: underline;
 }
