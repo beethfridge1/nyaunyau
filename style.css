@@ -61,7 +61,7 @@ nav a:hover {
   position: relative;       /* ensure above background/video */
   z-index: 10;
   animation: fadeInOut 4s ease-in-out infinite alternate;
-  opacity: 0;
+  opacity: 1;
   text-shadow:
     0 0 8px #8121FF,
     0 0 16px #FF2167,
