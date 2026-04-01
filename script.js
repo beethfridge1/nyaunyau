@@ -62,4 +62,28 @@ function animate() {
 }
 
 animate();
+
+  const text = document.getElementById("floatingText");
+
+let mouseX = 0;
+let mouseY = 0;
+let posX = 0;
+let posY = 0;
+
+document.addEventListener("mousemove", (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+function animate() {
+  posX += (mouseX - posX) * 0.05;
+  posY += (mouseY - posY) * 0.05;
+
+  text.style.left = posX + "px";
+  text.style.top = posY + "px";
+
+  requestAnimationFrame(animate);
+}
+
+animate();
 });
