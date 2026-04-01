@@ -147,6 +147,11 @@ footer {
 
 /* ==================== Floating Text ==================== */
 .floating-text {
+  text-shadow:
+    0 0 8px #8121FF,
+    0 0 16px #FF2167,
+    0 0 24px #8121FF;
+}
     position: fixed;
     top: 50%;
     left: 50%;
@@ -158,9 +163,6 @@ footer {
     background: rgba(0,0,0,0.7);
     padding: 15px 25px;
     border-radius: 12px;
-    box-shadow:
-        0 0 20px #8121FF,
-        0 0 40px #FF2167;
     z-index: 1000;
 }
 
