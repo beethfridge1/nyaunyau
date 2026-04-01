@@ -54,14 +54,17 @@ nav a:hover {
     color: white;
     text-align: center;
     font-size: 110px;
-    box-shadow:
-        0 0 20px #8121FF,
-        0 0 40px #FF2167;
 }
 
+
 .hero h2 {
-  animation: fadeInOut 3s ease-in-out infinite alternate;
-  opacity: 0; /* start invisible */
+  animation: fadeInOut 4s ease-in-out infinite alternate;
+  opacity: 0;
+  text-shadow:
+    0 0 8px #8121FF,
+    0 0 16px #FF2167,
+    0 0 24px #8121FF;
+}
 }
 
 @keyframes fadeInOut {
