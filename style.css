@@ -157,6 +157,14 @@ footer {
     transform: translate(-50%, -50%) translateY(0);
 }
 
+.floating-text a {
+  color: white;
+  text-decoration: none;
+}
+.floating-text a:hover {
+  text-decoration: underline;
+}
+
 /* ==================== Reszponzív ==================== */
 @media (max-width: 768px) {
     .hero {
