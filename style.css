@@ -146,9 +146,16 @@ footer {
     }
 
 .floating-text {
-  position: fixed;
-  left: 0;
-  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) translateY(50px);
+  transition: all 0.3s ease;
+}
+
+.floating-text.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) translateY(0);
+}
 
   color: white;
   background: rgba(0,0,0,0.7);
