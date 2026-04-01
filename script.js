@@ -30,5 +30,36 @@ sparkle.style.height = size + "px";
   setTimeout(() => {
     sparkle.remove();
   }, 800);
-  
+
+  const text = document.getElementById("floatingText");
+
+let mouseX = 0;
+let mouseY = 0;
+
+let posX = 0;
+let posY = 0;
+
+// track mouse
+document.addEventListener("mousemove", (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+// animation loop
+function animate() {
+  // smooth follow (lag effect)
+  posX += (mouseX - posX) * 0.08;
+  posY += (mouseY - posY) * 0.08;
+
+  // random drift
+  const driftX = (Math.random() - 0.5) * 10;
+  const driftY = (Math.random() - 0.5) * 10;
+
+  text.style.left = (posX + driftX) + "px";
+  text.style.top = (posY + driftY) + "px";
+
+  requestAnimationFrame(animate);
+}
+
+animate();
 });
