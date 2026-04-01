@@ -58,6 +58,8 @@ nav a:hover {
 
 
 .hero h2 {
+  position: relative;       /* ensure above background/video */
+  z-index: 10;
   animation: fadeInOut 4s ease-in-out infinite alternate;
   opacity: 0;
   text-shadow:
@@ -161,7 +163,7 @@ footer {
     opacity: 0;
     transform: translate(-50%, -50%) translateY(50px);
     transition: all 0.3s ease;
-
+  z-index: 1000;             /* on top of everything */
     color: white;
     background: rgba(0,0,0,0.7);
     padding: 15px 25px;
