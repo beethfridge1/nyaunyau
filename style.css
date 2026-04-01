@@ -1,4 +1,4 @@
-/* Alap beállítások */
+/* ==================== Alap beállítások ==================== */
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +6,11 @@
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-/* Oldal háttér */
 body {
-
     color: #333;
 }
 
-/* Fejléc */
+/* ==================== Fejléc ==================== */
 header {
     background: #222;
     color: white;
@@ -21,7 +19,6 @@ header {
     font-size: 50px;
 }
 
-/* ✅ FIX: separate class */
 .slide-text {
     display: inline-block;
     animation: slideLR 3s ease-in-out infinite alternate;
@@ -32,7 +29,7 @@ header {
     to { transform: translateX(50px); }
 }
 
-/* Navigáció */
+/* ==================== Navigáció ==================== */
 nav {
     margin-top: 10px;
 }
@@ -48,7 +45,7 @@ nav a:hover {
     color: #00bcd4;
 }
 
-/* Hero szekció */
+/* ==================== Hero szekció ==================== */
 .hero {
     height: 300px;
     display: flex;
@@ -59,14 +56,14 @@ nav a:hover {
     font-size: 110px;
 }
 
-/* Tartalom */
+/* ==================== Tartalom ==================== */
 .section {
     padding: 100px 50px;
     max-width: 1200px;
     margin: auto;
 }
 
-/* Képgaléria */
+/* ==================== Képgaléria ==================== */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -83,7 +80,7 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-/* ✅ FIX: properly closed */
+/* ==================== YouTube iframe ==================== */
 iframe {
     position: fixed;
     top: 0;
@@ -94,7 +91,7 @@ iframe {
     z-index: -1;
 }
 
-/* Lábléc */
+/* ==================== Lábléc ==================== */
 footer {
     background: #222;
     color: white;
@@ -103,22 +100,13 @@ footer {
     margin-top: 40px;
 }
 
-/* Reszponzív */
-@media (max-width: 768px) {
-    .hero {
-        height: 250px;
-    }
-}
-
-/* Sparkle */
+/* ==================== Sparkle ==================== */
 .sparkle {
     position: fixed;
     width: 14px;
     height: 14px;
     pointer-events: none;
-
     background: white;
-
     clip-path: polygon(
         50% 0%, 61% 35%, 98% 35%,
         68% 57%, 79% 91%,
@@ -126,12 +114,10 @@ footer {
         32% 57%, 2% 35%,
         39% 35%
     );
-
     filter:
         drop-shadow(0 0 8px white)
         drop-shadow(0 0 16px cyan)
         drop-shadow(0 0 30px cyan);
-
     animation: driftFade 0.8s ease-out forwards;
 }
 
@@ -144,33 +130,36 @@ footer {
         opacity: 0;
         transform: translate(var(--driftX), var(--driftY)) scale(0.4);
     }
+}
 
+/* ==================== Floating Text ==================== */
 .floating-text {
-  position: fixed;   /* REQUIRED */
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  pointer-events: none;
-  transform: translate(-50%, -50%) translateY(50px);
-  transition: all 0.3s ease;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) translateY(50px);
+    transition: all 0.3s ease;
+
+    color: white;
+    background: rgba(0,0,0,0.7);
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow:
+        0 0 20px #8121FF,
+        0 0 40px #FF2167;
+    z-index: 1000;
 }
 
 .floating-text.show {
-  opacity: 1;
-  transform: translate(-50%, -50%) translateY(0);
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(0);
 }
 
-  color: white;
-  background: rgba(0,0,0,0.7);
-  padding: 15px 25px;
-  border-radius: 12px;
-
-  pointer-events: none;
-
-  transform: translate(-50%, -50%);
-
-  box-shadow:
-    0 0 20px #8121FF,
-    0 0 40px #FF2167;
-}
+/* ==================== Reszponzív ==================== */
+@media (max-width: 768px) {
+    .hero {
+        height: 250px;
+    }
 }
