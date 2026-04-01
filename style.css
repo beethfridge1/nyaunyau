@@ -145,54 +145,22 @@ footer {
         transform: translate(var(--driftX), var(--driftY)) scale(0.4);
     }
 
-    .popup {
-  display: none;
+.floating-text {
   position: fixed;
-  top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0;
 
+  color: white;
   background: rgba(0,0,0,0.7);
-  backdrop-filter: blur(5px);
+  padding: 15px 25px;
+  border-radius: 12px;
 
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
+  pointer-events: none;
 
-.popup-content {
-  background: #111;
-  padding: 30px;
-  border-radius: 15px;
-  width: 300px;
-  color: white;
-  text-align: center;
-}
+  transform: translate(-50%, -50%);
 
-.popup-content input,
-.popup-content textarea {
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
-}
-
-.popup-content button {
-  background: linear-gradient(90deg, #8121FF, #FF2167);
-  border: none;
-  padding: 10px;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.close {
-  position: absolute;
-  right: 20px;
-  top: 10px;
-  font-size: 25px;
-  cursor: pointer;
+  box-shadow:
+    0 0 20px #8121FF,
+    0 0 40px #FF2167;
 }
 }
