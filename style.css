@@ -56,6 +56,16 @@ nav a:hover {
     font-size: 110px;
 }
 
+.hero h2 {
+  animation: fadeInOut 3s ease-in-out infinite alternate;
+  opacity: 0; /* start invisible */
+}
+
+@keyframes fadeInOut {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 /* ==================== Tartalom ==================== */
 .section {
     padding: 100px 50px;
