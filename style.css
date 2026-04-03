@@ -168,9 +168,9 @@ footer {
     border-radius: 12px;
 
     text-shadow:
-      0 0 8px #8121FF,
-      0 0 16px #FF2167,
-      0 0 24px #8121FF;
+      0 0 8px #ffffff,
+      0 0 20px #ffffff,
+      0 0 44px #8121FF;
 
     pointer-events: none;
 }
