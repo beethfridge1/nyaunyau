@@ -47,7 +47,7 @@ nav a:hover {
 
 /* ==================== Hero szekció ==================== */
 .hero {
-    height: 320px;
+    height: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
