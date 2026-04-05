@@ -1,3 +1,17 @@
+//szaros toas anim
+const el = document.getElementById("switchItem");
+
+let isImage = false;
+
+el.addEventListener("click", () => {
+  if (!isImage) {
+    el.innerHTML = '<img src="kep1.jpg" style="height:40px;">';
+  } else {
+    el.textContent = 'r';
+  }
+  isImage = !isImage;
+});
+
 // ------------------ SPARKLE CURSOR ------------------
 document.addEventListener("mousemove", function(e) {
   const sparkle = document.createElement("div");
