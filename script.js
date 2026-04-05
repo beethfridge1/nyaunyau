@@ -5,7 +5,7 @@ let isImage = false;
 
 el.addEventListener("click", () => {
   if (!isImage) {
-    el.innerHTML = '<img src="toas.png" style="height:40px;">';
+    el.innerHTML = '<img src="toas.png" style="height:60px;">';
   } else {
     el.textContent = 'r';
   }
